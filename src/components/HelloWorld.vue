@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -80,6 +81,13 @@
         </a>
       </li>
     </ul>
+    <div class="recharge">充电🔋</div>
+    <ul>
+      <li @click="$router.push('/First')">第一步</li>
+      <li>第二步</li>
+      <li>第三步</li>
+    </ul>
+    <div @click="$router.push('/SlideSwitch')">滑动切换预览</div>
   </div>
 </template>
 
@@ -109,5 +117,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.recharge {
+  font-size: 25px;
 }
 </style>
