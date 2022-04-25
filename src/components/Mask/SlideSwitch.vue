@@ -1,11 +1,18 @@
 <template>
-    <div class="slide-switch">
+    <!-- <div class="slide-switch">
         <div class="g-outer">
             <div class="g-inner width-change"></div>
         </div>
         <div class="g-outer">
             <div class="g-inner mask-change"></div>
         </div>
+    </div> -->
+    <div>
+        <img src="https://assets.2dfire.com/frontend/2555c9ee791f118a87a56b0aa064b2cf.png" usemap="#mymap" height="400" width="400" align="center">
+        <map name="mymap" id="toLink">
+            <area shape="rect" coords="0,0,200,200" href="http://ngrok.2dfire-daily.com:8990/nginx-atom/page/home.html#/main?cat=H5" title="ngrok">
+            <area shape="rect" coords="200,200,400,400" href="http://www.baidu.com" title="百度一下,你就知道">
+        </map>
     </div>
 </template>
 <script>
