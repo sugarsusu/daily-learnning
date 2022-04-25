@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import First from '@/components/ReCharge/First'
 import SlideSwitch from '@/components/Mask/SlideSwitch'
+import EventButton from '@/components/EventButton/index'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/SlideSwitch',
       name: 'SlideSwitch',
       component: SlideSwitch
+    },
+    {
+      path: '/EventButton',
+      name: 'EventButton',
+      component: EventButton
     }
   ]
 })
