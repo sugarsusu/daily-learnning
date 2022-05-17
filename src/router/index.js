@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import First from '@/components/ReCharge/First'
-import SlideSwitch from '@/components/Mask/SlideSwitch'
-import EventButton from '@/components/EventButton/index'
+import HelloWorld from '@/Page/HelloWorld'
+import First from '@/Page/ReCharge/First'
+import SlideSwitch from '@/Page/Mask/SlideSwitch'
+import EventButton from '@/Page/EventButton/index'
+import AdvancedUse from '@/Page/AdvancedUse/index'
+import DynamicComponent from '@/Page/DynamicComponent/index'
 
 Vue.use(Router)
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/EventButton',
       name: 'EventButton',
       component: EventButton
+    },
+    {
+      path: '/AdvancedUse',
+      name: 'AdvancedUse',
+      component: AdvancedUse
+    },
+    {
+      path: '/DynamicComponent',
+      name: 'DynamicComponent',
+      component: DynamicComponent
     }
   ]
 })

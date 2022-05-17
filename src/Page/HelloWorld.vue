@@ -88,15 +88,48 @@
       <li>第三步</li>
     </ul>
     <div @click="$router.push('/SlideSwitch')">滑动切换预览</div>
+    <div @click="$router.push('/DynamicComponent')">
+       <h2>动态组件</h2>
+       <!-- <p>---- ++++  ------</p>
+       <div v-for="(value, key) in resData" :key="key" >
+        <component :is="value.type"></component>
+       </div> -->
+    </div>
+
   </div>
 </template>
 
 <script>
+import NextTick from '../Components/NextTick.vue'
+import West from '../Components/West.vue'
+import Info from '../Components/Info.vue'
 export default {
   name: 'HelloWorld',
+  components: {
+    NextTick,
+    West,
+    Info
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      resData: {
+        1: {
+          type: 'info'
+        },
+        2: {
+          type: 'west'
+        },
+        3: {
+          type: 'info'
+        },
+        4: {
+          type: 'tick'
+        }
+      },
+      info: 'Info',
+      west: 'West',
+      tick: 'NextTick'
     }
   }
 }
