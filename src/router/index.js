@@ -6,6 +6,7 @@ import SlideSwitch from '@/Page/Mask/SlideSwitch'
 import EventButton from '@/Page/EventButton/index'
 import AdvancedUse from '@/Page/AdvancedUse/index'
 import DynamicComponent from '@/Page/DynamicComponent/index'
+import Demo from '@/Page/DynamicComponent/Demo'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/DynamicComponent',
       name: 'DynamicComponent',
       component: DynamicComponent
+    },
+    {
+      path: '/Demo',
+      name: 'Demo',
+      component: Demo
     }
   ]
 })
